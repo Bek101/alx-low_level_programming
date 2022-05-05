@@ -6,11 +6,13 @@
  * Return: void
 */
 
-char *_strcat(char *dest, char *src)
+int main()
 {
+    char dest[20]="bek";
+    char src[20]="magna";
+
 int a = -1, i;
-for (i = 0; dest[i] != '\0'; i++)
-;
+for (i = 0; dest[i] != '\0'; i++);
 
 do {
 	a++;
@@ -18,5 +20,6 @@ do {
 	i++;
 } while (src[a] != '\0');
 
-return (dest);
+printf("%s",dest);
+return (0);
 }
